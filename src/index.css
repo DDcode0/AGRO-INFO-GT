@@ -1,0 +1,18 @@
+@import "leaflet/dist/leaflet.css";
+@import "leaflet-draw/dist/leaflet.draw.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px; /* ¡Aumenta o reduce según prefieras! */
+  background: #0f172a;
+}
+
+.card{@apply bg-slate-800 rounded-2xl shadow-lg p-4 sm:p-6;}
+.input{@apply bg-slate-700 rounded-xl px-3 py-3 text-white w-full;}
+.warn {@apply text-yellow-400 font-bold;}
+
