@@ -207,24 +207,6 @@ function recomendacionesPorFase(cultivo: string, dias: number, clima: any) {
   };
 }
 
-function Hint({ paso, texto }: { paso: number; texto: string }) {
-  if (!showHint[paso]) return null;
-
-  return (
-    <div className="bg-slate-700 text-gray-200 text-sm p-2 rounded-lg mb-3
-                    flex justify-between items-start">
-      <span>{texto}</span>
-      <button
-        onClick={() => setShowHint(h => ({ ...h, [paso]: false }))}
-        className="ml-2 px-2 text-gray-400 hover:text-white leading-none"
-        aria-label="Cerrar ayuda"
-      >
-        ×
-      </button>
-    </div>
-  );
-}
-
 
 
 
@@ -238,13 +220,7 @@ export default function App() {
   const [centro, setCentro] = useState<[number, number] | null>(null);
   const [loading, setLoading] = useState(false);
   const [lugar, setLugar] = useState<string | null>(null);
-  const [showHint, setShowHint] = useState<{ [k: number]: boolean }>({
-  1: true, // ayuda Paso 1
-  2: true, // ayuda Paso 2
-  3: true  // ayuda Paso 3
-});
-
-
+ 
 
   // Persistencia (opcional)
   useEffect(() => {
