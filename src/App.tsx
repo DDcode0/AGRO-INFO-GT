@@ -352,7 +352,8 @@ export default function App() {
                 <span className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-teal-600 text-white flex items-center justify-center font-bold text-lg sm:text-xl md:text-2xl">1</span>
                 
                 <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-white break-words">
-                  Dibuja el cultivo de tu terreno, presiona el icono de la derecha y busca tu ubicacion
+                  Dibuja el cultivo de tu terreno en tu ubicacion, presiona el icono de la derecha en forma de rombo y une puntos para formar una figura
+
 
                   
                 </h2>
