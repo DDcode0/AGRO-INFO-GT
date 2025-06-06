@@ -1,0 +1,9 @@
+staticSites:
+  - name: agro-info-gt
+    repo: https://github.com/DDcode0/AGRO-INFO-GT
+    branch: main            # o la rama que uses
+    buildCommand: |
+      npm ci                # instala dependencias
+      npm run build         # genera la carpeta dist
+    publishDir: dist        # Render servirá /dist
+    envVars: []             # no necesitas variables por ahora
